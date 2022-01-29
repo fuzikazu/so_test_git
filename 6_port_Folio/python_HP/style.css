@@ -1,0 +1,334 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+title {
+    display: none;
+}
+
+header {
+    width: 100%;
+    background-color: navy;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.header_left {
+    margin-left: 30px;
+    padding: 11px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_left > span {
+    margin-left: 18px;
+    color: yellow;
+    font-size: 26px;
+    font-family: serif;
+}
+
+.icon {
+    height: 70px;
+}
+
+.header_right {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.m {
+    display: flex;
+    /* flex-direction: row; */
+    list-style: none;
+}
+
+li {
+    padding: 0 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.syoukai {
+    /* background-color: white; */
+    margin: 92px 0 0 0;
+    top: 92px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./png/main2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:fuchsia;
+    height: 70vh;
+}
+
+/* .syoukai > .title {
+    background-image: url(./png/kakiya.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: greenyellow;
+} */
+
+.syoukai > h1 {
+    font-size: 110px;
+    justify-content: center;
+}
+.syoukai > p {
+    font-size: 60px;
+    color: aquamarine;
+    font-family: serif;
+    justify-content: center;
+}
+
+.anime {
+    padding: 30px;
+    background-color: cyan;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+.anime1 {
+    border-radius: 0.5em;
+    background: #f00;
+    overflow: hidden;
+}
+.h {
+    font-size: 30px;
+    margin: 0;
+    color: white;
+    animation: flowing 20s linear infinite;
+    transform: translateX(100%);
+    z-index: 0;
+}
+@keyframes flowing {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.pysy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #EEE8AA;
+}
+.name {
+    font-size: 40px;
+}
+.pr_left {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    width: 40%;
+}
+.pr_right {
+    padding-left: 40px;
+}
+.date {
+    display: flex;
+    font-size: 18px;
+}
+.date_left, .date_right {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 40px;
+    padding: 10px 10px;
+}
+.date_right {
+    font-family: serif;
+}
+/* p {
+    display:  block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+} */
+
+.pysy2 {
+    width: 100%;
+    text-align: center;
+}
+.pysy2 > h1 {
+    padding-top: 150px;
+    padding-bottom: 80px;
+}
+.yoi {
+    font-size: 30px;
+    font-family: serif;
+}
+
+.sab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+}
+.sab1 {
+    width: 31%;
+    height: 480px;
+    text-align: left;
+}
+.sab_img {
+    width: 100%;
+}
+.sab_img1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.sab_buttom {
+    height: 274px;
+}
+.sab_title, .sab_title1 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+/* .sab_title1 {
+    font-size: 20px;
+    /* margin-top: 34px;
+    margin-bottom: 10px;
+} */
+.sab_sy {
+    height: 140px;
+    /* padding-bottom: 30px; */
+}
+.wrap {
+    text-align: right;
+}
+.wrap > button {
+    padding: 8px 14px;
+}
+button {
+    font-size: 18px;
+    background-color:orange;
+    color: white;
+    border-radius: 5px;
+    font-family: serif;
+}
+
+.bot_my {
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #EEE8AA;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.kityu_left {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 50%;
+    border-radius: 20px;
+    border: solid 3px;
+    margin: 0 20px;
+    height: 50vh;
+}
+.kiimg {
+    border-radius: 50%;
+    height:  200px;
+    margin: 0 auto;
+    justify-content: left;
+    padding-left: 10px;
+}
+.tyosya {
+    padding-left: 10px;
+    margin: 20px 2px;
+}
+.my, .mydate {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    line-height: 40px;
+    padding-left: 20px;
+}
+.myname {
+    font-size: 24px;
+    font-family: serif;
+    padding-bottom: 38px;
+}
+.p_right {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.kityu_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    /* line-height: 50px; */
+    /* padding-right: 20px; */
+    margin: 0 20px;
+    border-radius: 20px;
+    border: solid 3px;
+    height: 50vh;
+}
+.contact {
+    font-size: 23px;
+}
+input, textarea, button {
+    border-radius: 5px;
+    /* width: 50%; */
+}
+input {
+    width: 100%;
+    font-size: 23px;
+    margin-bottom:12px;
+    /* padding: 3px 12px; */
+}
+textarea {
+    width: 100%;
+}
+
+.con_form {
+    width: 100%;
+    display: flex;
+    /* flex-flow: column; */
+    flex-direction: column;
+    align-items: center;
+}
+button {
+    margin-top: 5px;
+    width: 45%;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #223644;
+}
+.tyosaku {
+    font-size: 20px;
+    color: cyan;
+}
