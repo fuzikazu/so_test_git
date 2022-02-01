@@ -32,3 +32,13 @@ services:
    depends_on:
      - php
      - mysql
+ phpmyadmin:
+   image: phpmyadmin
+   environment:
+     - PMA_HOST=mysql
+     - PMA_USER=root
+     - PMA_PASSWORD=password
+   ports:
+     - 8081:80
+   depends_on:
+     - mysql
